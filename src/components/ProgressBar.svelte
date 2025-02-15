@@ -31,6 +31,7 @@
 		height: 4px;
 		position: relative;
 		overflow: hidden;
+		display: none;
 	}
 	.progress-fill {
 		position: absolute;

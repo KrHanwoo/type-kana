@@ -1,5 +1,5 @@
 import sveltePreprocess from "svelte-preprocess"
-import adapterVercel from "@sveltejs/adapter-vercel"
+import adapter from '@sveltejs/adapter-static'
 import path from "path"
 import { readdirSync } from "fs"
 
@@ -24,7 +24,7 @@ function listRoutesIn(p) {
 
 	const routes = filenames.map((filename) => {
 		const name = path.parse(filename).name
-		return path.join("/", p, name)
+		return path.join("/", p, name).replaceAll('\\', '/');
 	})
 
 	return routes
@@ -36,7 +36,7 @@ const config = {
 	extensions: [".svelte"],
 
 	kit: {
-		adapter: adapterVercel(),
+		adapter: adapter(),
 		prerender: {
 			enabled: true,
 			default: true,

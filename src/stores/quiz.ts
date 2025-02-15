@@ -17,7 +17,7 @@ export interface Quiz {
 
 function createQuiz(dictionary: string[]): Quiz {
 	return {
-		unquizzed: shuffleArray(dictionary).map((kana) => ({ kana })),
+		unquizzed: shuffleArray(dictionary.concat(dictionary).concat(dictionary)).map((kana) => ({ kana })),
 		quizzed: []
 	}
 }

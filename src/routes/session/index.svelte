@@ -80,13 +80,9 @@
 		} else {
 			playErrorSound()
 			streakLength = 0
-
-			// Add item back at the end of queue at a random position;
-			if ($settings.retryIncorrectAnswers) {
-				const index = Math.min(randomInt(5, 12), unquizzed.length)
-				quiz.insert(index, currentItem)
-			}
 		}
+		const index = Math.min(randomInt(5, 12), unquizzed.length)
+		quiz.insert(index, currentItem)
 
 		quiz.pop((item) => ({
 			...item,

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="color-scheme" content="light dark" />
+
+		<base href="/" />
+
+		<link rel="manifest" href="/manifest.json" crossorigin="use-credentials" />
+
+		<!-- Embed -->
+		<meta name="title" content="Type Kana" />
+		<meta
+			name="description"
+			content="A quiz app that aims to help you learn hiragana and katakana. Highly configurable to fit your individual needs."
+		/>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://type-kana.furudean.com/" />
+		<meta property="og:title" content="Type Kana" />
+		<meta
+			property="og:description"
+			content="A quiz app that aims to help you learn hiragana and katakana. Highly configurable to fit your individual needs."
+		/>
+		<meta
+			property="og:image"
+			content="https://type-kana.furudean.com/embed.png"
+		/>
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://type-kana.furudean.com/" />
+		<meta property="twitter:title" content="Type Kana" />
+		<meta
+			property="twitter:description"
+			content="A quiz app that aims to help you learn hiragana and katakana. Highly configurable to fit your individual needs."
+		/>
+		<meta
+			property="twitter:image"
+			content="https://type-kana.furudean.com/embed.png"
+		/>
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link
+			rel="alternate icon"
+			type="image/png"
+			sizes="32x32"
+			href="/favicon-32x32.png"
+		/>
+		<link
+			rel="alternate icon"
+			type="image/png"
+			sizes="16x16"
+			href="/favicon-16x16.png"
+		/>
+		<link rel="apple-touch-icon" sizes="192x192" href="/maskable-192x192.png" />
+
+		<!-- Fonts	-->
+		<link rel="stylesheet" href="/font/mplus-2p.css" defer />
+		<link rel="stylesheet" href="/font/mplus-2c.css" defer />
+
+		<!-- Svelte head	-->
+		<meta http-equiv="content-security-policy" content=""><title>Setup · Type Kana</title>
+		<meta name="robots" content="noindex" data-svelte="svelte-1fi7q8e">
+	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout.svelte-5047c4df.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/pages/setup/index.svelte-113e178b.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/quiz-eb2bbef6.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/Radio-2868f6d6.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/Button-fe0e2dc6.css">
+	<link rel="modulepreload" href="/_app/immutable/start-713507eb.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-7f1c3d66.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-76f9cd11.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/singletons-d6e4a54a.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-4201353e.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/stores-5ce123b6.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/settings-121f1947.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/audio-a1355b49.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/setup/index.svelte-29798bb9.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/quiz-d9b00f48.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/Radio-c41d3c38.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/Button-8ee2eaaf.js">
+			<script>
+		if ('serviceWorker' in navigator) {
+			addEventListener('load', () => {
+				navigator.serviceWorker.register('/service-worker.js');
+			});
+		}
+	</script>
+	</head>
+
+	<body>
+		
+
+
+
+
+
+
+<main class="svelte-xdb3dz">
+
+<div class="wrapper svelte-vzo3e5"><fieldset class="kana-type svelte-vzo3e5"><legend class="svelte-vzo3e5">I want to practice...</legend>
+		<div class="radio-buttons svelte-vzo3e5"><div class="radio-button svelte-1bxj11g"><input type="radio" id="kana-type-hiragana-choice" name="kana-type" value="hiragana"   class="svelte-1bxj11g" checked>
+	<label for="kana-type-hiragana-choice" class="svelte-1bxj11g">Hiragana
+			</label>
+</div>
+			<div class="radio-button svelte-1bxj11g"><input type="radio" id="kana-type-katakana-choice" name="kana-type" value="katakana"   class="svelte-1bxj11g">
+	<label for="kana-type-katakana-choice" class="svelte-1bxj11g">Katakana
+			</label>
+</div>
+			<div class="radio-button svelte-1bxj11g"><input type="radio" id="kana-type-both-choice" name="kana-type" value="both"   class="svelte-1bxj11g">
+	<label for="kana-type-both-choice" class="svelte-1bxj11g">Both
+			</label>
+</div></div></fieldset>
+	<section class="columns svelte-vzo3e5"><section class="column svelte-1n4mhtb" aria-label="Monographs"><div class="row select-all svelte-1n4mhtb">
+		<label class="svelte-1n4mhtb"><div class="checkbox svelte-1fu2yaq"><input type="checkbox"  class="svelte-1fu2yaq" checked>
+	
+</div>
+			<span>Select all</span></label></div>
+	<div class="row" role="row" aria-label="a- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq" checked>
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">あ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">い</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">う</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">え</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">お</span>
+</div></div><div class="row" role="row" aria-label="k- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq" checked>
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">か</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">き</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">く</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">け</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">こ</span>
+</div></div><div class="row" role="row" aria-label="s- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq" checked>
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">さ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">し</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">す</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">せ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">そ</span>
+</div></div><div class="row" role="row" aria-label="t- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq" checked>
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">た</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ち</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">つ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">て</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">と</span>
+</div></div><div class="row" role="row" aria-label="n- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq" checked>
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">な</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">に</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ぬ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ね</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">の</span>
+</div></div><div class="row" role="row" aria-label="m- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq" checked>
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ま</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">み</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">む</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">め</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">も</span>
+</div></div><div class="row" role="row" aria-label="h- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq" checked>
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">は</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ひ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ふ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">へ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ほ</span>
+</div></div><div class="row" role="row" aria-label="y- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq" checked>
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">や</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">あ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ゆ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">あ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">よ</span>
+</div></div><div class="row" role="row" aria-label="r- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq" checked>
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ら</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">り</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">る</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">れ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ろ</span>
+</div></div><div class="row" role="row" aria-label="w- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq" checked>
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">わ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">あ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">あ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">あ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">を</span>
+</div></div><div class="row" role="row" aria-label="n- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq" checked>
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ん</span>
+</div></div>
+</section>
+		<section class="column svelte-1n4mhtb" aria-label="Monographs with diacritics"><div class="row select-all svelte-1n4mhtb">
+		<label class="svelte-1n4mhtb"><div class="checkbox svelte-1fu2yaq"><input type="checkbox"  class="svelte-1fu2yaq" checked>
+	
+</div>
+			<span>Select all</span></label></div>
+	<div class="row" role="row" aria-label="g- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq" checked>
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">が</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ぎ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ぐ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">げ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ご</span>
+</div></div><div class="row" role="row" aria-label="z- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq" checked>
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ざ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">じ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ず</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ぜ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ぞ</span>
+</div></div><div class="row" role="row" aria-label="d- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq" checked>
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">だ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ぢ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">づ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">で</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ど</span>
+</div></div><div class="row" role="row" aria-label="b- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq" checked>
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ば</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">び</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ぶ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">べ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ぼ</span>
+</div></div><div class="row" role="row" aria-label="p- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq" checked>
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ぱ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ぴ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ぷ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ぺ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ぽ</span>
+</div></div>
+</section>
+		<section class="column svelte-1n4mhtb" aria-label="Digraphs"><div class="row select-all svelte-1n4mhtb">
+		<label class="svelte-1n4mhtb"><div class="checkbox svelte-1fu2yaq"><input type="checkbox"  class="svelte-1fu2yaq">
+	
+</div>
+			<span>Select all</span></label></div>
+	<div class="row" role="row" aria-label="ky- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq">
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">きゃ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">きゅ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">きょ</span>
+</div></div><div class="row" role="row" aria-label="sh- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq">
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">しゃ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">しゅ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">しょ</span>
+</div></div><div class="row" role="row" aria-label="ch- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq">
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ちゃ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ちゅ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ちょ</span>
+</div></div><div class="row" role="row" aria-label="ny- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq">
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">にゃ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">にゅ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">にょ</span>
+</div></div><div class="row" role="row" aria-label="hy- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq">
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ひゃ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ひゅ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ひょ</span>
+</div></div><div class="row" role="row" aria-label="my- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq">
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">みゃ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">みゅ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">みょ</span>
+</div></div><div class="row" role="row" aria-label="ry- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq">
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">りゃ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">りゅ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">りょ</span>
+</div></div>
+</section>
+		<section class="column svelte-1n4mhtb" aria-label="Digraphs with diacritics"><div class="row select-all svelte-1n4mhtb">
+		<label class="svelte-1n4mhtb"><div class="checkbox svelte-1fu2yaq"><input type="checkbox"  class="svelte-1fu2yaq">
+	
+</div>
+			<span>Select all</span></label></div>
+	<div class="row" role="row" aria-label="gy- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq">
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ぎゃ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ぎゅ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ぎょ</span>
+</div></div><div class="row" role="row" aria-label="ja- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq">
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">じゃ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">じゅ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">じょ</span>
+</div></div><div class="row" role="row" aria-label="by- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq">
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">びゃ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">びゅ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">びょ</span>
+</div></div><div class="row" role="row" aria-label="py- sounds"><div class="checkbox svelte-1fu2yaq"><input type="checkbox" title="Select row"  indeterminate="false" class="svelte-1fu2yaq">
+	
+</div>
+	<div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ぴゃ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ぴゅ</span>
+</div><div class="checkbox-kana spacer svelte-1xjysdd fill" aria-hidden="true"><span class="svelte-1xjysdd">ぴょ</span>
+</div></div>
+</section></section>
+	<section class="menu-bar glass-morphism contrast svelte-o5tuiq"><div class="menu content-padding svelte-vzo3e5"><a href="/" class="button outline svelte-enpwz1" sveltekit:prefetch><div class="effect svelte-enpwz1"><svg class="svg-icon svelte-1d9c03d" width="1.25em" height="1.25em" role="img" viewBox="0 0 24 24" aria-hidden="true"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" fill="currentColor"></path></svg>
+				Back
+			</div></a>
+			<a href="session" class="button fill svelte-enpwz1" sveltekit:prefetch><div class="effect svelte-enpwz1">Start quiz
+				<svg class="svg-icon svelte-1d9c03d" width="1.25em" height="1.25em" role="img" viewBox="0 0 24 24" aria-hidden="true"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" fill="currentColor"></path></svg></div></a></div>
+</section>
+</div>
+</main>
+
+
+		<script type="module" data-sveltekit-hydrate="1hjfjfn">
+		import { start } from "/_app/immutable/start-713507eb.js";
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="1hjfjfn"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [0, 6],
+				params: {},
+				routeId: "setup"
+			}
+		});
+	</script>
+	</body>
+</html>

@@ -81,8 +81,7 @@
 			playErrorSound()
 			streakLength = 0
 		}
-		const index = Math.min(randomInt(5, 12), unquizzed.length)
-		quiz.insert(index, currentItem)
+		quiz.insert(unquizzed.length-1, currentItem)
 
 		quiz.pop((item) => ({
 			...item,
